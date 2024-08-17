@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import { useEffect, useState } from 'react'
+import ClockFace from '../ClockFace/ClockFace'
 import getTime from './getTime'
 import styles from './Watch.module.css'
 
@@ -11,7 +12,7 @@ export default function Watch({ id, title, timeZone }) {
     const interval = setInterval(() => {
       setTime(currentTime())
       console.log(time)
-    }, 1000)
+    }, 1000 / 60)
 
     return () => {
       clearInterval(interval)
@@ -29,7 +30,7 @@ export default function Watch({ id, title, timeZone }) {
           X
         </button>
       </div>
-      <div className={styles.time}>{time}</div>
+      <ClockFace time={time} />
     </div>
   )
 }
