@@ -39,7 +39,8 @@ export default function FormAdd({ onSubmit }) {
           type='number'
           name='timeZone'
           ref={timeZoneRef}
-          min={0}
+          min={-12}
+          max={14}
           required
         />
       </label>

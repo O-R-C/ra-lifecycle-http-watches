@@ -1,0 +1,33 @@
+.watchContainer {
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  position: relative;
+
+  &:hover button {
+    display: block;
+  }
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+
+  & button {
+    background: transparent;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+
+    display: none;
+
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+}
