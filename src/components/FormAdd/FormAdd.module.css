@@ -1,0 +1,28 @@
+.form-add {
+  display: flex;
+  gap: 10px;
+
+  & label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  & input {
+    width: 200px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  & button {
+    width: 100px;
+    background: transparent;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+
+    align-self: end;
+  }
+}
